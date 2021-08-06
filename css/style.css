@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "OpenSans-Bold";
+    src: url(/fonts/OpenSans-Bold.woff);
+    font-weight: 600;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: OpenSans-Regular, sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+/*HEADER-START-------------------------------------------------------------*/
+.header{
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url(/img/banner-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.header-menu-row{
+    padding: 0 16px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+.header-menu-burger-img{
+    position: relative;
+    width: 23px;
+    height: 4px;
+    background-color: white;
+}
+.header-menu-burger-img::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    width: 23px;
+    height: 4px;
+    background-color: white;
+}
+.header-menu-burger-img::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 23px;
+    height: 4px;
+    background-color: white;
+}
+.header-menu-item{
+    text-transform: uppercase;
+    margin-left: 35px;
+    color: white;
+}
+.header-main-row{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-text{
+    text-transform: uppercase;
+    color: white;
+    font-family: "OpenSans-Bold";
+    font-size: 26px;
+    text-align: center;
+}
+/*HEADER-END-------------------------------------------------------------*/
+@media(max-width:640px){
+    .header-menu-list{
+        display: none;
+    }
+    
+}
+@media(min-width:640px) and (max-width:1200px){
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .header-menu-burger{
+        display: none;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .header-menu-burger{
+        display: none;
+    }
+}
