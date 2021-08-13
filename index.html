@@ -349,6 +349,51 @@
             </div>
         </div>
     </footer>
+    <div class="popup _hidden">
+        <div class="popup-form-area">
+            <div class="popup-close-area">
+                <div class="popup-close">
+                    <img src="svg/form-x.svg" alt="close">
+                </div>
+            </div>
+            <div class="popup-form-row">
+                <div class="popup-title">
+                    <h2 class="h2">ваш фидбек</h2>
+                </div>
+                <form action="#" class="popup-form">
+
+                    <label for="how-often" class="label">Как часто вы заходите на сайт?</label>
+                    <div class="how-often-area">
+                        <select name="how-often" id="how-often" class="often">
+                            <option value="everyday" selected>Почти каждый день</option>
+                            <option value="everyweek">Каждую неделю</option>
+                            <option value="once a month">Раз в месяц</option>
+                            <option value="once a year">Раз в год</option>
+                          </select>
+                    </div>
+
+                    <div class="label">Вы подписаны на рассылку?</div>
+                    <div class="group-subscribe">
+                        <input type="radio" id="sub-yes" name="subscribe" value="yes" class="subscribe-select">
+                        <label for="sub-yes" class="subscribe-select-label">Да</label>
+                        <input type="radio" id="sub-no" name="subscribe" value="no" class="subscribe-select">
+                        <label for="sub-no" class="subscribe-select-label">Нет</label>
+                    </div>
+
+                    <label for="about-content" class="label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+                    <div class="about-content-area">
+                        <textarea class="about-content" id="about-content" rows="6" wrap="soft">Может, больше рецептов?</textarea>
+                    </div>
+
+                    <div class="button-area">
+                        <button class="subscribe-button" type="submit">отправить</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
