@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://www.targetmarketingsol.com/images/web-design-icon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>MQ-36</title>
 </head>
 
@@ -344,6 +345,9 @@
             </address>
             </div>
             <div class="row">
+                <div class="feedback">
+                    <button class="subscribe-button" type="submit" style="width: 200px;">ваш фидбек</button>
+                </div>
                 <div class="copyright">
                     <a href="#0">Copyright © 2009–2019 City Blog LLC.</a>
                 </div>
@@ -394,7 +398,38 @@
             </div>
         </div>
     </div>
+    <div class="menu-mobile _hidden">
+        <div class="menu-mobile-close">
+            <img src="svg/form-x.svg" alt="close">
+        </div>
+        <div class="menu-mobile-body">
+            <ul class="menu-mobile-list">
+                <li class="menu-mobile-item" data-href="#main">Главная</li>
+                <li class="menu-mobile-item" data-href="#posts">Посты</li>
+                <li class="menu-mobile-item" data-href="#articles">Статьи</li>
+                <li class="menu-mobile-item" data-href="#tags">Теги</li>
+                <li class="menu-mobile-item" data-href="#themes">Темы</li>
+                <li class="menu-mobile-item" data-href="#contacts">Контакты</li>
+            </ul>
+        </div>
+    </div>
 
+    <script>
+        $(".burger").click(function() {
+            $(".menu-mobile").toggleClass("_hidden");
+        });
+        $(".menu-mobile-close").click(function() {
+            $(".menu-mobile").toggleClass("_hidden");
+        });
+        $(".menu-mobile-item").click(function() {
+            $(".menu-mobile").toggleClass("_hidden");
+            location.href = $(this).attr('data-href');
+        });
+
+        $(".subscribe-button, .popup-close").click(function() {
+            $(".popup").toggleClass("_hidden");
+        });
+    </script>
 </body>
 
 </html>
