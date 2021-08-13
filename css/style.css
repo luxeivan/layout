@@ -676,6 +676,12 @@ button.subscribe-button {
     }
 }
 
+.feedback {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 /*POPUP START--------------------------------------------------*/
 
@@ -691,8 +697,6 @@ button.subscribe-button {
     justify-content: center;
     align-items: center;
 }
-
-.popup-form-area {}
 
 .popup-close-area {
     display: flex;
@@ -710,22 +714,13 @@ button.subscribe-button {
     background-color: #fff;
     padding: 54px 32px;
     font-family: OpenSans-Regular, open-sans;
-    margin: 20px;
 }
-
-.popup-title {}
-
-.h2 {}
-
-.popup-form {}
 
 .label {
     display: block;
     margin-top: 35px;
     margin-bottom: 10px;
 }
-
-.how-often-area {}
 
 .often {
     width: 100%;
@@ -738,8 +733,6 @@ button.subscribe-button {
     background-repeat: no-repeat;
     background-size: 8px;
 }
-
-.group-subscribe {}
 
 .subscribe-select {
     clip: rect(1, 1, 1, 1);
@@ -781,13 +774,64 @@ button.subscribe-button {
     resize: none;
 }
 
-.button-area {}
 
-.subscribe-button {}
+/*POPUP END--------------------------------------------------*/
+
+
+/*MENUMOBILE START--------------------------------------------------*/
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mobile-body {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.menu-mobile-close {
+    display: flex;
+    justify-content: flex-end;
+    fill: black;
+    width: 80%;
+    cursor: pointer;
+}
+
+.menu-mobile-close img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-mobile-item {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: OpenSans-Regular, open-sans;
+    cursor: pointer;
+}
+
+.menu-mobile-item:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+
+/*MENUMOBILE END--------------------------------------------------*/
 
 ._hidden {
     display: none;
 }
-
-
-/*POPUP END--------------------------------------------------*/
