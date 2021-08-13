@@ -697,7 +697,9 @@ button.subscribe-button {
     justify-content: center;
     align-items: center;
 }
-
+.popup-form-area {
+    margin: 0 20px;
+}
 .popup-close-area {
     display: flex;
     justify-content: flex-end;
