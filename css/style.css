@@ -475,7 +475,7 @@ button.subscribe-button {
     color: #0f0d0e;
 }
 
-.product-desc a {
+.product-desc-link {
     color: #b59f5b;
 }
 
@@ -500,7 +500,7 @@ button.subscribe-button {
     font-size: 20px;
 }
 
-.product-button a {
+.product-button-link {
     font-family: OpenSans, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
