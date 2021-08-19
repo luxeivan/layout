@@ -177,10 +177,11 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .trend-item {
-    flex-basis: calc(25% - 5px);
+    flex: calc(25% - 5px);
     height: 320px;
     display: flex;
     align-items: flex-end;
@@ -595,7 +596,6 @@ button.subscribe-button {
     }
     .trend-item {
         flex-basis: calc(50% - 5px);
-        margin-top: 10px;
     }
     .column {
         justify-content: space-evenly;
