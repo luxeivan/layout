@@ -685,7 +685,6 @@ button.subscribe-button {
 @media(max-width:640px) and (orientation:landscape) {
     .trend-item {
         flex-basis: calc(50% - 5px);
-        margin-top: 10px;
     }
 }
 
