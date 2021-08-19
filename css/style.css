@@ -394,7 +394,7 @@ button.subscribe-button {
     margin: 2px;
 }
 
-.tags-item a {
+.tags-item-link {
     display: block;
     padding: 8px 13px;
     text-transform: uppercase;
@@ -412,12 +412,12 @@ button.subscribe-button {
     font-size: 14px;
 }
 
-.topics-item a {
+.topics-item-link {
     position: relative;
     color: #000;
 }
 
-.topics-item a span {
+.topics-item-uppercase {
     position: absolute;
     top: -3px;
     margin-left: 3px;
